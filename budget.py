@@ -52,8 +52,8 @@ def depense():
 print("\n")
 # fonction pour voir le résumé du budget
 def resume():
-    print(f"Revenu: {sum(list_revenu)}$")
-    print(f"Dépense: {sum(list_depense)}$")
+    print(f"Total des revenus: {sum(list_revenu)}$")
+    print(f"Total des depenses: {sum(list_depense)}$")
     print("\n")
     print(f"Solde actuelle: {sum(list_revenu) - sum(list_depense)}$")
     
