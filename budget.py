@@ -64,4 +64,14 @@ def resume():
     
     print("\n")
     print("✅ Résumé affiché avec succès !")
-    
+
+
+def write_file():
+    with open("expenses.txt", "w") as f:
+        f.write("Liste des dépenses: \n")
+        f.write(f"Total des revenus: {sum(list_revenu)}$\n")
+        f.write(f"Total des depenses: {sum(list_depense)}$\n")
+        f.write(f"Solde actuelle: {sum(list_revenu) - sum(list_depense)}$\n")
+        
+        for i in range(len(list_depense)):
+            f.write(f"{list_categorie[i].upper()} - {list_depense[i]}$\n")

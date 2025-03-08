@@ -1,4 +1,4 @@
-from budget import revenu, depense, resume, list_revenu, list_depense
+from budget import revenu, depense, resume, write_file, list_revenu, list_depense
 
 while True:
     
@@ -18,6 +18,7 @@ while True:
         
     elif choix_option == "3":
         resume()
+        write_file()
         
     elif choix_option == "4":
         print("Vous avez quitté le programme")
