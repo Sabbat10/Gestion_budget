@@ -49,18 +49,18 @@ def depense():
         print("❌ Entrez un momtant valide", e)
         return 0
     
-print("\n")
+
 # fonction pour voir le résumé du budget
 def resume():
+    print("\n")
     print(f"Total des revenus: {sum(list_revenu)}$")
     print(f"Total des depenses: {sum(list_depense)}$")
-    print("\n")
     print(f"Solde actuelle: {sum(list_revenu) - sum(list_depense)}$")
     
     
     print("Liste des dépenses: ")
     for i in range(len(list_depense)):
-        print(f"Catégorie: {list_categorie[i]} - {list_depense[i]}$")
+        print(f"{list_categorie[i].upper()} - {list_depense[i]}$")
     
     print("\n")
     print("✅ Résumé affiché avec succès !")

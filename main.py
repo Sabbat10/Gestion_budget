@@ -8,7 +8,7 @@ while True:
     print("3. Voir le résumé")
     print("4. Quitter")
     
-    choix_option = input("Choisissez une option: 1 - Dépense, 2 - Revenu, 3 - Bilan, 4 - Quitter: ")
+    choix_option = input("Choisissez une option: 1 - Revenu, 2 - Dépense, 3 - Bilan, 4 - Quitter: ")
     
     if choix_option == "1":
         revenu()
@@ -20,5 +20,5 @@ while True:
         resume()
         
     elif choix_option == "4":
-        print("Quitter")
+        print("Vous avez quitté le programme")
         break
