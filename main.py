@@ -1,4 +1,4 @@
-from budget import revenu, depense, list_revenu
+from budget import revenu, depense, resume, list_revenu, list_depense
 
 while True:
     
@@ -11,14 +11,14 @@ while True:
     choix_option = input("Choisissez une option: 1 - Dépense, 2 - Revenu, 3 - Bilan, 4 - Quitter: ")
     
     if choix_option == "1":
-        print(f"Revenu ajouté: {revenu()}$")
-        print(list_revenu)
+        revenu()
         
     elif choix_option == "2":
         depense()
         
     elif choix_option == "3":
-        print("Voir le résumé")
+        resume()
+        
     elif choix_option == "4":
         print("Quitter")
         break
